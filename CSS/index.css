@@ -1,0 +1,121 @@
+@import "menuCabecera.css";
+
+/* contenido de la pagina web */
+.cuerpo {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  margin: auto;
+  font-size: 2vw;
+  padding: 2vw;
+  grid-gap: 2vw;
+}
+
+#oferta {
+  grid-column: 1/2;
+  grid-row: 1;
+  position: relative;
+  z-index: -1;
+  font-weight: bold;
+}
+
+#oferta h2:first-child {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  margin: auto;
+  color: white;
+  background-color: #363431bf;
+  text-align: justify;
+  border-radius: 5px;
+  padding: 0.5vw;
+}
+
+#oferta h2:nth-child(2) {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  margin: auto;
+  color: white;
+  background-color: #363431bf;
+  text-align: justify;
+  border-radius: 5px;
+  padding: 0.5vw;
+}
+
+.informacion{
+  background-color: #d1ccc5;
+  padding: 2vw;
+  text-align: center;
+  font-size: 1.5vw;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.informacion > h2, .informacion > ul{
+  margin: 0;
+}
+
+.informacion li{
+  text-align: left;
+  padding: 0.6vw;
+}
+
+.informacion > figure{
+  margin: 0;
+}
+
+.informacion a{
+  padding: 1vw 2vw;
+  background-color: #c7450b;
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.informacion a:hover{
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+
+.cuerpo a> figure, .cuerpo >figure {
+  margin: 0;
+  text-align: center;
+  position: relative;
+  height: 100%;
+}
+
+.cuerpo a:hover>* {
+  filter: brightness(80%);
+  transition: all 0.3s;
+}
+
+.cuerpo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.enlace>h2 {
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 30%;
+  margin-bottom: 25px;
+  background-color: #363431bf;
+  border-radius: 5px;
+  padding: 0.5vw;
+}
+
+.enlace2>h2 {
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 25px;
+  background-color: var(--resaltado);
+  margin-bottom: 25px;
+  border-radius: 5px;
+  padding: 0.5vw;
+}

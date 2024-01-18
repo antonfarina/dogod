@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <title>dogod Modificacion</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/modificacion.css">
+</head>
+
+
+<body>
+  <header>
+    <div id="cabecera">
+      <a href="../index.html">
+        <figure>
+          <img src="../fotos/logo.png" alt="logo de la tienda">
+        </figure>
+      </a>
+      <a href="../index.html">
+        <h1>dogod</h1>
+      </a>
+      <h2>Modificación o cancelación</h2>
+      <ul>
+        <li>Abrimos de lunes a viernes de 10 a 19:30h</li>
+        <li>Teléfono: 981332546</li>
+        <li>Correo: dogod@gmail.com</li>
+        <li>Dirección: Plaza de Galicia 1, Santiago de compostela</li>
+      </ul>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li>Artículos
+        <ul class="submenu">
+          <li><a href="alimentacion.html">Alimentación</a></li>
+          <li><a href="juguetes.html">Juguetes</a></li>
+          <li><a href="higiene.html">Higiene</a></li>
+          <li><a href="accesorios.html">Accesorios</a></li>
+        </ul>
+      </li>
+      <li><a href="peluqueria.html">Peluquería</a></li>
+      <li>Citas
+        <ul class="submenu">
+          <li><a href="reservar.html">Reserva</a></li>
+          <li><a href="modificacion.html">Modificación o<br>cancelación</a></li>
+        </ul>
+      </li>
+      <li><a href="quienessomos.html">¿Quiénes somos?</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li class="redes">
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="../fotos/instagram1.png" alt="logo instagram">
+        </a>
+      </li>
+      <li class="redes">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="../fotos/facebook1.png" alt="logo facebook">
+        </a>
+      </li>
+      <li class="redes">
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="../fotos/twitter1.png" alt="logo twitter">
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="cuerpo">
+    <form class="cita" onsubmit="popup()">
+      <input type="text" placeholder="ID de cita" id="id">
+      <div class="seleccion">
+        <div class="radiobtn">
+          <input type="radio" id="modificar" name="opcion" value="modificar" checked>
+          <label>Modificar cita</label>
+        </div>
+        <div class="radiobtn">
+          <input type="radio" id="cancelar" name="opcion" value="cancelar">
+          <label>Cancelar cita</label>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Resumen de la cita actual:</h3>
+        <ul>
+          <li>Servicio: Corte y lavado</li>
+          <li>Fecha: 13/12/2022</li>
+          <li>Hora: 16:00h</li>
+          <li>Nombre: Pablo Martínez</li>
+          <li>Correo: pablom@gmail.com</li>
+          <li>Teléfono: 699485231</li>
+        </ul>
+      </div>
+      <div class="modificar">
+        <select name="servicios" size="1" id="servicios">
+          <option value="" selected disabled>Selecciona un nuevo servicio</option>
+          <option value="corte">Corte y lavado (1 hora aprox)</option>
+          <option value="lavado">Lavado (30 mins aprox)</option>
+          <option value="arreglo">Arreglo de patas (10 mins aprox)</option>
+        </select>
+        <input type="date">
+        <select name="horas" size="1" id="horainicio">
+          <option value="" selected disabled>Nueva hora</option>
+          <option value="10:00">10:00</option>
+          <option value="11:00">11:00</option>
+          <option value="12:00">12:00</option>
+          <option value="13:00">13:00</option>
+          <option value="14:00">14:00</option>
+          <option value="15:00">15:00</option>
+          <option value="16:00">16:00</option>
+          <option value="17:00">17:00</option>
+          <option value="18:00">18:00</option>
+        </select>
+      </div>
+      <input type="submit" value="Modificar cita" id="btnmodificar">
+    </form>
+    <figure><img src="../fotos/cita.gif" alt="animacion de perro"></figure>
+  </section>
+
+
+  <footer>
+    <div>
+      <ul>
+        <li>Abrimos de lunes a viernes de 10 a 19:30h</li>
+        <li>Teléfono: 981332546</li>
+        <li>Correo: dogod@gmail.com</li>
+        <li>Dirección: Plaza de Galicia 1, Santiago de compostela</li>
+      </ul>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8335473815305!2d-8.546643984748508!3d42.87635731033235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efe4734c8bc85%3A0xa06c5b95855e4124!2sPraza%20de%20Galicia%2C%201%2C%2015706%20Santiago%20de%20Compostela%2C%20A%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1665139434910!5m2!1ses!2ses"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <form>
+        <label>¿Tienes alguna duda? Escríbenos</label>
+        <textarea name="comentario" rows="4" cols="30" placeholder="Escribe tu consulta"></textarea>
+        <input type="email" value="" placeholder="Correo de contacto">
+        <input type="submit" name="comentar" value="Enviar">
+      </form>
+    </div>
+    <ul class="politicas">
+      <li>
+        <a href="">Aviso legal</a>
+      </li>
+      <li>
+        <a href="">Política de privacidad</a>
+      </li>
+      <li>
+        <a href="">Condiciones Generales</a>
+      </li>
+      <li>
+        <a href="">Política de Cookies</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
+<script>
+  //cambio del div en funcion de la opcion seleccionada
+  var cancelar = document.getElementById("cancelar");
+  cancelar.addEventListener("change", function() {
+    if (cancelar.checked) {
+      //ocultamos el div modificar
+      document.getElementsByClassName("modificar")[0].style.display = "none";
+      document.getElementById("btnmodificar").value = "Cancelar cita";
+    }
+  })
+
+  var modificar = document.getElementById("modificar");
+  modificar.addEventListener("change", function() {
+    if (modificar.checked) {
+      //mostramos el div modificar
+      document.getElementsByClassName("modificar")[0].style.display = "grid";
+      document.getElementById("btnmodificar").value = "Modificar cita";
+    }
+  })
+
+  var btn = document.getElementById("confirmar");
+  btn.addEventListener("click", function() {
+    alert("Comprueba tu correo para verificar la cita. ID de cita DG415");
+  })
+
+  function popup(){
+    if (cancelar.checked) {
+      alert("La cita ha sido cancelada");
+    }else{
+      alert("La cita ha sido modificada. Comprueba tu correo con la confirmación");
+    }
+  }
+</script>
+
+
+</html>

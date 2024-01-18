@@ -1,0 +1,73 @@
+@import "menuCabecera.css";
+
+.cuerpo{
+  display: flex;
+  padding: 4vw;
+  justify-content: space-around;
+}
+
+.cuerpo figure{
+  height: 100%;
+}
+
+.cuerpo img{
+  height: 33vw;
+}
+
+.cita {
+  width: 30%;
+  background-color: var(--verde_osc);
+  border-radius: 10px;
+  padding: 3vw;
+  color: white;
+  display: grid;
+  grid-template-areas: "titulo titulo" "servicio servicio""fecha hora" "nombre nombre" "correo correo" "telefono telefono" "btn btn";
+  grid-gap: 2vw;
+  box-shadow: 0px 5px 10px 1px #c9c9c9;
+}
+
+.cita h1{
+  grid-area: titulo;
+  font-size: 2.5vw;
+  text-align: center;
+  margin: 0;
+}
+
+.cita > * {
+  padding: 0.7vw;
+  font-size: 1.1vw;
+  border-radius: 5px;
+}
+
+.cita #servicios {
+  grid-area: servicio;
+}
+
+.cita select, .cita input {
+  border: 0;
+}
+
+.cita select {
+  cursor: pointer;
+}
+
+.cita input[type="text"] {
+  grid-area: nombre;
+}
+
+.cita input[type="email"] {
+  grid-area: correo;
+}
+
+.cita input[type="tel"] {
+  grid-area: telefono;
+}
+
+.cita input[type="submit"] {
+  grid-area: btn;
+  cursor: pointer;
+  color: white;
+  background-color: var(--naranja);
+  border: 0;
+  font-size: 1.3vw;
+}

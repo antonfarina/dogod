@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <title>dogod Reserva</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/reservar.css">
+</head>
+
+
+<body>
+  <header>
+    <div id="cabecera">
+      <a href="../index.html">
+        <figure>
+          <img src="../fotos/logo.png" alt="logo de la tienda">
+        </figure>
+      </a>
+      <a href="../index.html">
+        <h1>dogod</h1>
+      </a>
+      <h2>Reserva</h2>
+      <ul>
+        <li>Abrimos de lunes a viernes de 10 a 19:30h</li>
+        <li>Teléfono: 981332546</li>
+        <li>Correo: dogod@gmail.com</li>
+        <li>Dirección: Plaza de Galicia 1, Santiago de compostela</li>
+      </ul>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li>Artículos
+        <ul class="submenu">
+          <li><a href="alimentacion.html">Alimentación</a></li>
+          <li><a href="juguetes.html">Juguetes</a></li>
+          <li><a href="higiene.html">Higiene</a></li>
+          <li><a href="accesorios.html">Accesorios</a></li>
+        </ul>
+      </li>
+      <li><a href="peluqueria.html">Peluquería</a></li>
+      <li>Citas
+        <ul class="submenu">
+          <li><a href="reservar.html">Reserva</a></li>
+          <li><a href="modificacion.html">Modificación o<br>cancelación</a></li>
+        </ul>
+      </li>
+      <li><a href="quienessomos.html">¿Quiénes somos?</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li class="redes">
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="../fotos/instagram1.png" alt="logo instagram">
+        </a>
+      </li>
+      <li class="redes">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="../fotos/facebook1.png" alt="logo facebook">
+        </a>
+      </li>
+      <li class="redes">
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="../fotos/twitter1.png" alt="logo twitter">
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="cuerpo">
+    <form class="cita" onsubmit="informar()">
+      <h1>Reserva aquí tu cita</h1>
+      <select name="servicios" size="1" id="servicios">
+        <option value="" selected disabled>Selecciona un servicio</option>
+        <option value="corte">Corte y lavado (1 hora aprox)</option>
+        <option value="lavado">Lavado (30 mins aprox)</option>
+        <option value="arreglo">Arreglo de patas (10 mins aprox)</option>
+      </select>
+      <input type="date">
+      <select name="horas" size="1" id="horainicio">
+        <option value="" selected disabled>Hora</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="13:00">13:00</option>
+        <option value="14:00">14:00</option>
+        <option value="15:00">15:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+        <option value="18:00">18:00</option>
+      </select>
+      <input type="text" name="nombre" placeholder="Nombre y apellidos">
+      <input type="email" name="correo" placeholder="Correo electrónico" title="Ajústate al formato solicitado (con @ y .)">
+      <input type="tel" name="telefono" placeholder="Teléfono" pattern="[1-9][0-9]{8}" title="Introduce un número de teléfono de 9 dígitos">
+      <input type="submit" value="Confirmar" id="confirmar">
+    </form>
+    <figure><img src="../fotos/cita.gif" alt="animacion perro"></figure>
+    </section>
+
+
+    <footer>
+      <div>
+        <ul>
+          <li>Abrimos de lunes a viernes de 10 a 19:30h</li>
+          <li>Teléfono: 981332546</li>
+          <li>Correo: dogod@gmail.com</li>
+          <li>Dirección: Plaza de Galicia 1, Santiago de compostela</li>
+        </ul>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8335473815305!2d-8.546643984748508!3d42.87635731033235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efe4734c8bc85%3A0xa06c5b95855e4124!2sPraza%20de%20Galicia%2C%201%2C%2015706%20Santiago%20de%20Compostela%2C%20A%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1665139434910!5m2!1ses!2ses"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form>
+          <label>¿Tienes alguna duda? Escríbenos</label>
+          <textarea name="comentario" rows="4" cols="30" placeholder="Escribe tu consulta"></textarea>
+          <input type="email" value="" placeholder="Correo de contacto">
+          <input type="submit" name="comentar" value="Enviar">
+        </form>
+      </div>
+      <ul class="politicas">
+        <li>
+          <a href="">Aviso legal</a>
+        </li>
+        <li>
+          <a href="">Política de privacidad</a>
+        </li>
+        <li>
+          <a href="">Condiciones Generales</a>
+        </li>
+        <li>
+          <a href="">Política de Cookies</a>
+        </li>
+      </ul>
+    </footer>
+</body>
+
+<script>
+  // para poner la duracion del servicio en funcion del servicio seleccionado
+  var selectServicio = document.getElementById("servicios");
+  var selectHora = document.getElementById("horainicio");
+  var etiqueta = document.getElementById("infocita");
+  selectServicio.addEventListener('change',
+    function() {
+      var servicioSeleccionado = selectServicio.options[selectServicio.selectedIndex].text;
+      switch (servicioSeleccionado) {
+        case "Lavado":
+          etiqueta.innerHTML = "Duración aproximada: 30 mins";
+          break;
+        case "Corte y lavado":
+          etiqueta.innerHTML = "Duración aproximada: 1 hora";
+          break;
+        case "Arreglo de patas":
+          etiqueta.innerHTML = "Duración aproximada: 10 mins";
+          break;
+      }
+    });
+    function informar(){
+      alert("Comprueba tu correo para verificar la cita. ID de cita DG415");
+    }
+</script>
+
+
+</html>

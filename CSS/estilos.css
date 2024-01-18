@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&display=swap');
+
+:root {
+  /* --verde_osc: #0A423F; */
+  --verde_osc: #01563E;
+  --verde_nav: #35A75C;
+  --footer: #071c12;
+  --verde_form: #a9ca76c9;
+  --resaltado: #363431bf;
+  --granate: #AE1858;
+  --naranja: #d17600;
+}
+
+body {
+  margin: 0;
+  background-color: #0a423f;
+  color: white;
+  background-color: white;
+  color: black;
+}
+
+html {
+  font-family: "Inter-Tight", sans-serif;
+  font-size: 1.5vw;
+  scroll-behavior: smooth;
+}

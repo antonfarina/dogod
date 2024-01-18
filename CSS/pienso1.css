@@ -1,0 +1,59 @@
+@import "menuCabecera.css";
+
+#seleccionado{
+  background: rgba(0, 0, 0, 0.3);;
+}
+
+#cabecera{
+  position: sticky;
+  top: 0;
+}
+
+nav{
+  position: sticky;
+  top: 0;
+}
+
+body{
+  background-color: white;
+}
+
+.cuerpo{
+  padding: 2vw;
+  background-color: white;
+  color: black;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+
+.cuerpo p, .cuerpo li{
+  font-size: 1.3vw;
+}
+
+.cuerpo h4{
+  font-size: 1.3vw;
+  margin-bottom: 0;
+}
+
+.cuerpo > figure{
+  width: 50%;
+  margin: auto;
+  padding-right: 2vw;
+
+}
+
+.foto{
+  margin-right: 2vw;
+  background-color: #b1c8af;
+  border-radius: 5px;
+}
+
+.foto > h2{
+  text-align: center;
+  font-size: 3vw;
+}
+
+.cuerpo img{
+  width: 40vw;
+}
