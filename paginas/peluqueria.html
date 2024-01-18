@@ -26,7 +26,8 @@
         <li>Abrimos de lunes a viernes de 10 a 19:30h</li>
         <li>Teléfono: 981332546</li>
         <li>Correo: dogod@gmail.com</li>
-        <li>Dirección: Plaza de Galicia 1, Santiago de compostela</li>
+        <li>Dirección: Plaza de Galicia 1, Santiago de Compostela</li>
+        <li><a href="#contacto" id="enlaceCont">Contacto</a></li>
       </ul>
     </div>
   </header>
@@ -41,7 +42,7 @@
           <li><a href="accesorios.html">Accesorios</a></li>
         </ul>
       </li>
-      <li><a href="peluqueria.html">Peluquería</a></li>
+      <li id="seleccionado"><a href="peluqueria.html">Peluquería</a></li>
       <li>Citas
         <ul class="submenu">
           <li><a href="reservar.html">Reserva</a></li>
@@ -49,7 +50,7 @@
         </ul>
       </li>
       <li><a href="quienessomos.html">¿Quiénes somos?</a></li>
-      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="preguntas.html">Preguntas frecuentes</a></li>
       <li class="redes">
         <a href="https://www.instagram.com" target="_blank">
           <img src="../fotos/instagram1.png" alt="logo instagram">
@@ -89,6 +90,7 @@
             <td>36€</td>
           </tr>
         </table>
+        <p style="font-size:1vw;">La duración aproximada es de 1 hora</p>
       </div>
       <figure>
         <img src="../fotos/corte.jpg" alt="foto corte de pelo">
@@ -114,6 +116,7 @@
             <td>+7€</td>
           </tr>
         </table>
+        <p style="font-size:1vw;">La duración aproximada es de 30 mins</p>
       </div>
     </div>
     <div class="servicio13">
@@ -135,12 +138,12 @@
         <li>Abrimos de lunes a viernes de 10 a 19:30h</li>
         <li>Teléfono: 981332546</li>
         <li>Correo: dogod@gmail.com</li>
-        <li>Dirección: Plaza de Galicia 1, Santiago de compostela</li>
+        <li>Dirección: Plaza de Galicia 1, Santiago de Compostela</li>
       </ul>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8335473815305!2d-8.546643984748508!3d42.87635731033235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efe4734c8bc85%3A0xa06c5b95855e4124!2sPraza%20de%20Galicia%2C%201%2C%2015706%20Santiago%20de%20Compostela%2C%20A%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1665139434910!5m2!1ses!2ses"
          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <form>
+      <form id="contacto" onsubmit="enviar()">
         <label>¿Tienes alguna duda? Escríbenos</label>
         <textarea name="comentario" rows="4" cols="30" placeholder="Escribe tu consulta"></textarea>
         <input type="email" value="" placeholder="Correo de contacto">
@@ -164,5 +167,10 @@
   </footer>
 </body>
 
+<script>
+function enviar(){
+  alert("Consulta enviada");
+}
+</script>
 
 </html>

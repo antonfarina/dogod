@@ -3,15 +3,13 @@
 .cuerpo{
   display: flex;
   padding: 4vw;
+  padding-right: 0;
   justify-content: space-around;
 }
 
 .cuerpo figure{
   height: 100%;
-}
-
-.cuerpo img{
-  height: 33vw;
+  margin: auto;
 }
 
 .cita {
@@ -70,4 +68,54 @@
   background-color: var(--naranja);
   border: 0;
   font-size: 1.3vw;
+}
+
+.precios{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  width: 27%;
+  padding: 0 2vw;
+  margin-left: 2vw;
+  font-size: 80%;
+  color: var(--verde_osc);
+  border: solid 2px;
+  border-radius: 5px;
+}
+
+.precios > h1{
+  font-size: 3vw;
+  margin: 0;
+}
+
+.precios > h2{
+  font-size: 2vw;
+  padding: 1vw;
+  margin: 0;
+  color: var(--verde_osc);
+}
+
+.precios > div {
+  padding: 1vw;
+  border-radius: 5px;
+  border: solid 2px;
+}
+
+.precios > div > h2{
+  margin: 0;
+  padding-bottom: 1vw;
+  font-size: 2vw;
+}
+
+.precios table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.precios th, .precios td{
+  border: solid 2px;
+  padding: 0.5vw;
+  background-color:var(--verde_osc);
+  color: white;
 }

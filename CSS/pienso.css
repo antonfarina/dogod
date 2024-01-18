@@ -1,0 +1,79 @@
+@import "menuCabecera.css";
+
+#seleccionado{
+  background: rgba(0, 0, 0, 0.3);;
+}
+
+#cabecera{
+  position: sticky;
+  top: 0;
+}
+
+nav{
+  position: sticky;
+  top: 0;
+}
+
+body{
+  background-color: white;
+}
+
+#volver{
+  width: 6%;
+  padding: 1vw;
+  margin-bottom: 2vw;
+  display: inline-block;
+  background-color: #ec8500;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+#volver:hover{
+  transition: all 0.3s;
+  background: #c77813;
+}
+
+section{
+  padding: 2vw;
+}
+
+.cuerpo{
+  background-color: white;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+  text-align: justify;
+}
+
+.cuerpo p, .cuerpo li{
+  font-size: 1.3vw;
+}
+
+.cuerpo h4{
+  font-size: 1.3vw;
+  margin-bottom: 0;
+}
+
+.cuerpo > figure{
+  width: 50%;
+  margin: auto;
+  padding-right: 2vw;
+}
+
+.foto{
+  margin-right: 2vw;
+  background-color: #1a215e;
+  border-radius: 5px;
+}
+
+.foto > h2{
+  text-align: center;
+  font-size: 3vw;
+  color: white;
+}
+
+.cuerpo img{
+  width: 40vw;
+}

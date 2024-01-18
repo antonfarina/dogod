@@ -40,8 +40,6 @@ table{
   width: 100%;
   text-align: center;
   border-collapse: collapse;
-  /* color: black;
-  background-color: white; */
 }
 
 td, th{
@@ -60,12 +58,12 @@ td, th{
 }
 
 .servicio13 figure, .servicio2 figure{
-  height: 100%;
-  margin:0;
+  width: 100%;
+  margin: auto;
 
 }
 
 .servicio13 img, .servicio2 img{
-  width:  100%;
+  width: 100%;
   border-radius: 20px;
 }

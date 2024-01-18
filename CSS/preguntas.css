@@ -1,0 +1,24 @@
+@import "menuCabecera.css";
+
+nav{
+  position: sticky;
+  top: 0;
+}
+
+.cuerpo{
+  padding: 3vw;
+  display: flex;
+}
+
+.preguntas{
+  padding-right: 2vw;
+  text-align: justify;
+}
+
+figure{
+  margin: auto;
+}
+
+img{
+  border-radius: 5px;
+}
